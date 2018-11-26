@@ -1,7 +1,7 @@
 # atom-codeship-builds
 Show a list of recently triggered builds with relevant information and latest status. Also adds a status-bar tile to show the latest build triggered for quick reference.
 
-![Status bar tile](./screenshots/status bar.png)
+![Status bar tile](./screenshots/statusbar.png)
 ![Dock pane](./screenshots/dock.png)
 
 # Configuration
