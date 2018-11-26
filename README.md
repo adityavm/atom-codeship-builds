@@ -1,10 +1,13 @@
 # atom-codeship-builds
 Show a list of recently triggered builds with relevant information and latest status. Also adds a status-bar tile to show the latest build triggered for quick reference.
 
+![Status bar tile](./screenshots/status bar.png)
+![Dock pane](./screenshots/dock.png)
+
 # Configuration
 The package requires a `.codeshipbuilds.json` in the root folder of your project. If no config file is found, the package will not proceed. The config file should be a valid JSON with the following properties:
 
-```
+```javascript
 {
   "username": "email@codeship.com",         // codeship login email
   "password": "your-codeship-password",     // codeship login password
