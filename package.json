@@ -1,0 +1,22 @@
+{
+  "name": "atom-codeship-builds",
+  "main": "./lib/codeship-builds",
+  "version": "0.0.0",
+  "description": "list codeship builds and status",
+  "keywords": [],
+  "repository": "https://github.com/adityavm/atom-codeship-builds",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {},
+  "author": "Aditya Mukherjee",
+  "private": false,
+  "consumedServices": {
+    "status-bar": {
+      "versions": {
+        "^1.0.0": "consumeStatusBar"
+      }
+    }
+  }
+}

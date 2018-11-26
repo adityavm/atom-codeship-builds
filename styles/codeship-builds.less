@@ -1,0 +1,86 @@
+@import "ui-variables";
+
+@success: #a6e22e;
+@testing: #fd971f;
+@failed: #f92672;
+
+// Status bar
+
+.codeship-builds-container {
+  background-color: #1a1a1a;
+  border-radius: 3px;
+  padding: 3px 6px 3px 0;
+}
+
+.codeship-builds-container__branch {
+  color: #111;
+  font-weight: 500;
+  padding: 3px 6px;
+  border-radius: 3px;
+  transition: all 0.4s ease-out;
+}
+
+.codeship-builds-container__branch--success {
+  background-color: @success;
+}
+
+.codeship-builds-container__branch--testing {
+  background-color: @testing;
+}
+
+.codeship-builds-container__branch--error {
+  background-color: @failed;
+}
+
+.codeship-builds-container__committer {
+  margin-left: 1em;
+}
+
+// Dock pane
+
+.codeship-builds-dock {
+  overflow: auto;
+  height: 100%;
+  padding: 5px;
+}
+
+.codeship-builds-dock__row {
+  padding: 3px 0;
+}
+
+.codeship-builds-dock__cell {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 3px;
+  max-width: 15vw;
+}
+
+.codeship-builds-dock__cell--commit {
+  max-width: 45vw;
+}
+
+.codeship-builds-dock__row + .codeship-builds-dock__row {
+  border-top: 1px solid #1a1a1a;
+}
+
+.codeship-builds-dock__cell:not(.codeship-builds-dock__cell--testing) + .codeship-builds-dock__cell {
+  margin-left: 20px;
+}
+
+.codeship-builds-dock__row--success .codeship-builds-dock__cell--build a {
+  color: @success;
+}
+
+.codeship-builds-dock__row--testing .codeship-builds-dock__cell--build a {
+  display: inline-block;
+  background-color: @testing;
+  color: #111;
+  font-weight: 500;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.codeship-builds-dock__row--error .codeship-builds-dock__cell--build a {
+  color: @failed;
+}
