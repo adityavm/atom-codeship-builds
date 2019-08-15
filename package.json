@@ -1,7 +1,7 @@
 {
   "name": "atom-codeship-builds",
   "main": "./lib/codeship-builds",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "list codeship builds and status",
   "keywords": [],
   "repository": "https://github.com/adityavm/atom-codeship-builds",
