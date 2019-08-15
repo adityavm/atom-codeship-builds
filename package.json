@@ -4,7 +4,7 @@
   "version": "0.0.4",
   "description": "list codeship builds and status",
   "keywords": [],
-  "repository": "https://github.com/adityavm/atom-codeship-builds",
+  "repository": "git@github.com:adityavm/atom-codeship-builds.git",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
